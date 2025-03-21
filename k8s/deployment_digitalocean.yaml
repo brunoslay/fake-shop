@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
         - name: fakeshop
-          image: brunoslay/fake-shop-desafio:v1
+          image: brunoslay/fake-shop-desafio:v2
           ports:
             - containerPort: 50000
           env: 

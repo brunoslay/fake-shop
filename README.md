@@ -26,3 +26,8 @@ kubectl get deployment
 kubectl get replicaset
 kubectl get all
 kubectl get pod -o wide
+
+
+kubectl rollout history deployment fakeshop
+
+kubectl rollout undo deployment fakeshop
