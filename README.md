@@ -31,3 +31,10 @@ kubectl get pod -o wide
 kubectl rollout history deployment fakeshop
 
 kubectl rollout undo deployment fakeshop
+
+comando senha grafana:
+
+kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+
+flask_http_request_duration_seconds_count{app="fakeshop", path="/"}
+
